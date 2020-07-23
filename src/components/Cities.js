@@ -20,7 +20,9 @@ const Cities = (props) =>{
           <Route path={`${match.path}/:cityName`} component={Weather} />
           <Route
               exact path={match.path}
-              render={() => <CityList cities={cities} />}
+              render={() => {
+                if(cities != null) return <CityList cities={cities} />
+              }}
           />
       </Switch>
     </div>
