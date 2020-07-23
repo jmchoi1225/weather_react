@@ -1,10 +1,8 @@
 import React from 'react';
 import logo from '../logo.svg';
 
-function Header(props){
-    console.log(props);
-
-    const cityName = props.cityName;
+const Header = ({cityName}) =>{
+    
     return(
         <header className="App-header">
             <div>{cityName}</div>
