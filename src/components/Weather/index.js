@@ -24,7 +24,7 @@ const Weather = (props) => {
         <div>
           <h3>Weather : {weather.weather[0].main}</h3>
           <p>Description : {weather.weather[0].description}</p>
-          <p>Temperature : {weather.main.temp}</p>
+          <p>Temperature : {(weather.main.temp-273.15).toFixed(2)}</p>
         </div>
       }
     </div>
