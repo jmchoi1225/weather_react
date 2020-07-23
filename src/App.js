@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
+import {sum, multiple} from "./Math";
 import './App.css';
 
 function App() {
+  console.log(sum(1,2));
+  console.log(multiple(1,2));
   return (
     <div className="App">
       <header className="App-header">
